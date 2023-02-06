@@ -8,7 +8,7 @@ This is sposed to be a alternative to nitrogen (A wallpaper app for window mange
 
 Before you runn it make sure tou install pip and custiomtkinter by:
 
-Ubuntu/Debian ``sudo apt install pip`` Arch ``sudo pacman -S pip`` then ``pip install customtkinter`` 
+Ubuntu/Debian ``sudo apt install pip`` Arch ``sudo pacman -S python-pip`` then ``pip install customtkinter`` 
 
 Finally, Ubuntu/Debian ``sudo apt-get install python3-tk`` Arch ``sudo pacman -S python3-tk``
 
