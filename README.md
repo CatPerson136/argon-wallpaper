@@ -10,7 +10,7 @@ Before you runn it make sure tou install pip and custiomtkinter by:
 
 Ubuntu/Debian ``sudo apt install pip`` Arch ``sudo pacman -S python-pip`` then ``pip install customtkinter`` 
 
-Finally, Ubuntu/Debian ``sudo apt-get install python3-tk`` Arch ``sudo pacman -S python3-tk``
+Finally, Ubuntu/Debian ``sudo apt-get install python3-tk`` Arch ``sudo pacman -S tk``
 
 # How to install xwallpaper
 
