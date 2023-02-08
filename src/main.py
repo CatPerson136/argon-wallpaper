@@ -24,10 +24,10 @@ window = ctk.CTk()
 window.title("Simple Wallpapers")
 
 # Setting the window size
-window.geometry("800x720")
+window.geometry("500x400")
 
 # This is the frame for the images
-picture_frame = ctk.CTkFrame(master=window, width=700, height=500).pack(pady=50)
+picture_frame = ctk.CTkFrame(master=window, width=350, height=200).pack(pady=50)
 
 
 # This opens your directoies
