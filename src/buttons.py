@@ -1,22 +1,20 @@
-# Importing Third_Party module
-from customtkinter import filedialog as f
-from customtkinter import CTkImage
-
-# Importing Standerd module
-import subprocess as sub
-from PIL import Image
+# Importing the modules needed.
+from customtkinter import filedialog
+import os
 
 # Button class
 class Buttons:
-    def open_folder():
-        file_name = f.askopenfilename(
+    def button_function():
+        global file_name
+        # Will open a file dialog for the file you want
+        file_name = filedialog.askopenfilename(
             initialdir="~",
             title="Sclect a File",
             filetypes=(("png files", "*.png"), ("all files", "*.*")),
         )
-        command = ["xwallpaper", "--zoom", file_name]
-        sub.run(command)
+        os.system("xwallpaper --zoom "+file_name) 
 
-    # TODO: Add a way to add to a image in another funtion
-    def add_to_image():
-       pass 
+    def save_file():
+        # This will save it to the bashrc file and write the command to it.
+        with open(os.path.expanduser("~/.bashrc"), "a") as file:
+            file.writelines("xwallpaper --zoom " + file_name)
